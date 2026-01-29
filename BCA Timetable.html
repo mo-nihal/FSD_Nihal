@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BCA Timetable</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        table{
+            width: 98%;
+            margin: auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td{
+            border: 2px solid black;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            
+        }
+
+        th{
+            font-weight: bold;
+            background-color: rgb(202, 202, 240);
+        }
+
+        .title{
+            font-size: 26px;
+            padding: 15px;
+            letter-spacing: 2px;
+            background-color: rgb(235, 206, 206);
+        }
+
+        .lunch{
+            font-weight: bold;
+            background-color: rgb(227, 227, 205);
+        }
+    </style>
+</head>
+
+<body>
+
+<table>
+
+    <!-- TITLE ROW USING COLSPAN -->
+    <tr>
+        <th colspan="10" class="title">BCA TIME TABLE</th>
+    </tr>
+
+    <!-- HEADER ROW -->
+    <tr>
+        <th>SL.NO</th>
+        <th>DATE</th>
+        <th>DAY</th>
+        <th>SESSION 1<br>08:00 - 08:55</th>
+        <th>SESSION 2<br>09:00 - 09:55</th>
+        <th>SESSION 3<br>10:00 - 10:55</th>
+        <th>SESSION 4<br>11:05 - 12:00</th>
+        <th>SESSION 5<br>12:05 - 13:00</th>
+        <th>SESSION 6<br>13:00 - 14:00</th>
+        <th>SESSION 7<br>14:10 - 15:05</th>
+    </tr>
+
+    <!-- MONDAY -->
+    <tr>
+        <td>1</td>
+        <td>05/01/2026</td>
+        <td>Monday</td>
+        <td>FSD (V-RKV)<br>LT 502</td>
+        <td>VI<br>LT 502</td>
+        <td></td>
+        <td>DWM<br>LT 502</td>
+        <td>NLP (V-NIG)<br>LT 502</td>
+
+        <!-- LUNCH BREAK USING ROWSPAN -->
+        <td rowspan="5" class="lunch">LUNCH<br>BREAK</td>
+
+        <td>AI (V-ABH)<br>LT 502</td>
+    </tr>
+
+    <!-- TUESDAY -->
+    <tr>
+        <td>2</td>
+        <td>06/01/2026</td>
+        <td>Tuesday</td>
+        <td></td>
+        <td>VI<br>LT 502</td>
+        <td>SE (V-RKV)<br>LT 502</td>
+        <td>CC (V-LAD)<br>LT 502</td>
+        <td>DWM<br>LT 502</td>
+        <td>AI (V-ABH)<br>LT 502</td>
+    </tr>
+
+    <!-- WEDNESDAY -->
+    <tr>
+        <td>3</td>
+        <td>07/01/2026</td>
+        <td>Wednesday</td>
+        <td>SE (V-RKV)<br>LT 502</td>
+        <td colspan="2">FSD (V-RKV)<br>LT 502</td>  <!-- COLSPAN EXAMPLE -->
+        <td>DWM<br>LT 502</td>
+        <td>NLP (V-NIG)<br>LT 502</td>
+        <td>AI (V-ABH)<br>LT 502</td>
+    </tr>
+
+    <!-- THURSDAY -->
+    <tr>
+        <td>4</td>
+        <td>08/01/2026</td>
+        <td>Thursday</td>
+        <td>VI<br>LT 502</td>
+        <td colspan="2">FSD (V-RKV)<br>LT 502</td>
+        <td>DWM<br>LT 502</td>
+        <td>NLP (V-NIG)<br>LT 502</td>
+        <td>AI (V-ABH)<br>LT 502</td>
+    </tr>
+
+    <!-- FRIDAY -->
+    <tr>
+        <td>5</td>
+        <td>09/01/2026</td>
+        <td>Friday</td>
+        <td>SE (V-RKV)<br>LT 502</td>
+        <td></td>
+        <td>FSD (V-RKV)<br>LT 502</td>
+        <td>NLP (V-NIG)<br>LT 502</td>
+        <td>VI<br>LT 502</td>
+        <td>CC (V-LAD)<br>LT 502</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
